@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    line-height: 1.6;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://t4.ftcdn.net/jpg/02/10/54/69/360_F_210546904_9BCZEy11YRxLIXH4WHC1btb0sPx7nF2m.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1{
+    color: #74d05a;
+    padding-left: 21%;
+    font-family: cursive;
+    font-size: xxx-large;
+
+}
+
+h2{
+    color: aquamarine;
+    font-family: cursive;
+    padding: 2%;
+    padding-left: 24%;
+}
+
+p{
+    color: #9bbb12;
+    font-family: fantasy;
+    padding: 2%;
+    padding-left: 34%;
+
+}
+
+.lbl{
+    font-family: emoji;
+    font-size: xx-large;
+    padding-left: 20%;
+    color: #dca76deb;
+}
+
+#input{
+    padding: 2%;
+    padding-left: 13%;
+
+}
+
+#temperatureInput{
+   background-color: #14533e7d;
+    color: #62edba;
+    padding: 1%;
+    border-radius: 30%;
+    font-size: x-large;
+}
+
+#unitSelect{
+    background-color: #14533e7d;
+    color: #62edba;
+    padding: 1%;
+    border-radius: 30%;
+    font-size: x-large;
+}
+
+#temp_type{
+    padding: 2%;
+    padding-left: 13%;
+}
+
+button{
+    padding: 1%;
+    width: 10%;
+    background-color: rgb(156, 70, 241);
+    color: rgb(118, 211, 180);
+    margin-left: 45%;
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+button:hover{
+    padding: 1%;
+    width: 10%;
+    background-color: rgb(102, 121, 217);
+    color: rgb(118, 211, 180);
+    margin-left: 45%;
+    border-radius: 25px;
+    font-family: cursive;
+    font-weight: 500;
+
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.converted-section {
+  opacity: 0; /* initially hidden */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.converted-section.active {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
