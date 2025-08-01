@@ -37,14 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 break;
         }
 
-        // Update the result section
+
         celsiusOutput.textContent = celsius.toFixed(2);
         fahrenheitOutput.textContent = fahrenheit.toFixed(2);
         kelvinOutput.textContent = kelvin.toFixed(2);
 
-        // Trigger slide-in animation
-        convertedSection.classList.remove("active"); // Reset previous animation
-        void convertedSection.offsetWidth; // Force reflow to restart animation
+        convertedSection.classList.remove("active"); 
+        void convertedSection.offsetWidth; 
         convertedSection.classList.add("active");
     });
 });
